@@ -1,4 +1,0 @@
-INFO:    Environment variable SINGULARITYENV_TMP is set, but APPTAINERENV_TMP is preferred
-INFO:    Environment variable SINGULARITYENV_TMPDIR is set, but APPTAINERENV_TMPDIR is preferred
-INFO:    Environment variable SINGULARITYENV_NXF_DEBUG is set, but APPTAINERENV_NXF_DEBUG is preferred
-Loading required package: optparse
