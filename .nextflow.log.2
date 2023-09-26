@@ -1,0 +1,73 @@
+Sep-21 11:55:51.127 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume -profile slurm,singularity -c conf/test.config
+Sep-21 11:55:51.223 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.0
+Sep-21 11:55:51.734 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/nextflow.config
+Sep-21 11:55:51.738 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/conf/test.config
+Sep-21 11:55:51.738 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/nextflow.config
+Sep-21 11:55:51.739 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/conf/test.config
+Sep-21 11:55:51.762 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `slurm,singularity`
+Sep-21 11:55:52.822 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `slurm,singularity`
+Sep-21 11:55:52.851 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, slurm, debug, conda, singularity]
+Sep-21 11:55:52.909 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [peaceful_jennings] DSL2 - revision: 9310db648c
+Sep-21 11:55:52.923 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/users/todd/zor420/.nextflow/plugins; core-plugins: nf-amazon@1.7.1,nf-azure@0.13.1,nf-console@1.0.3,nf-ga4gh@1.0.3,nf-google@1.1.4,nf-sqldb@0.4.0,nf-tower@1.4.0
+Sep-21 11:55:52.925 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-21 11:55:52.938 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-21 11:55:52.939 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-21 11:55:52.945 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep-21 11:55:52.954 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-21 11:55:53.013 [main] DEBUG nextflow.Session - Session uuid: a9e7b142-4df5-4523-adf2-03a47dbab3b1
+Sep-21 11:55:53.013 [main] DEBUG nextflow.Session - Run name: peaceful_jennings
+Sep-21 11:55:53.014 [main] DEBUG nextflow.Session - Executor pool size: 24
+Sep-21 11:55:53.055 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.04.0 build 5697
+  Created: 23-04-2022 18:00 UTC (19:00 BST)
+  System: Linux 3.10.0-1160.95.1.el7.x86_64
+  Runtime: Groovy 3.0.10 on OpenJDK 64-Bit Server VM 11.0.2+9
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 217466@rescomp1.hpc.in.bmrc.ox.ac.uk [10.136.1.241]
+  CPUs: 24 - Mem: 376.5 GB (166.5 GB) - Swap: 32 GB (31.5 GB)
+Sep-21 11:55:53.097 [main] DEBUG nextflow.Session - Work-dir: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/work [gpfs]
+Sep-21 11:55:53.097 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/bin
+Sep-21 11:55:53.108 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-21 11:55:53.119 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-21 11:55:53.194 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-21 11:55:53.208 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 25; maxThreads: 1000
+Sep-21 11:55:53.357 [main] DEBUG nextflow.Session - Session start invoked
+Sep-21 11:55:53.362 [main] DEBUG nextflow.trace.TraceFileObserver - Flow starting -- trace file: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/output/pipeline_info/execution_trace.txt
+Sep-21 11:55:53.916 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-21 11:55:54.097 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:bigmem` matches labels `bigmem` for process with name saige_logistic_whole_1
+Sep-21 11:55:54.104 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Sep-21 11:55:54.106 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Sep-21 11:55:54.114 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Sep-21 11:55:54.121 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Sep-21 11:55:54.124 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Sep-21 11:55:54.196 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:bigmem` matches labels `bigmem` for process with name saige_logistic_whole_2
+Sep-21 11:55:54.197 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Sep-21 11:55:54.197 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Sep-21 11:55:54.201 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: saige_logistic_whole_1, saige_logistic_whole_2, saige_logistic_1, saige_logistic_2
+Sep-21 11:55:54.202 [main] DEBUG nextflow.Session - Ignite dataflow network (6)
+Sep-21 11:55:54.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > saige_logistic_whole_1
+Sep-21 11:55:54.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > saige_logistic_whole_2
+Sep-21 11:55:54.215 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Sep-21 11:55:54.215 [main] DEBUG nextflow.Session - Session await
+Sep-21 11:55:54.519 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process saige_logistic_whole_1 (Run logistic regression on UKB_null) > jobId: 28516879; workDir: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/work/e4/f520c9a975b24dc9220ca7daa620c2
+Sep-21 11:55:54.520 [Task submitter] INFO  nextflow.Session - [e4/f520c9] Submitted process > saige_logistic_whole_1 (Run logistic regression on UKB_null)
+Sep-21 11:56:59.595 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 28516879; id: 1; name: saige_logistic_whole_1 (Run logistic regression on UKB_null); status: COMPLETED; exit: 1; error: -; workDir: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/work/e4/f520c9a975b24dc9220ca7daa620c2 started: 1695293814595; exited: 2023-09-21T10:56:55.488669Z; ]
+Sep-21 11:56:59.605 [Task monitor] INFO  nextflow.processor.TaskProcessor - [e4/f520c9] NOTE: Process `saige_logistic_whole_1 (Run logistic regression on UKB_null)` terminated with an error exit status (1) -- Execution is retried (1)
+Sep-21 11:56:59.647 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process saige_logistic_whole_1 (Run logistic regression on UKB_null) > jobId: 28516894; workDir: /gpfs3/users/todd/zor420/HLA-SAIGE-analysis/work/3e/dd8811414dc3159afa86ea2edf27dd
+Sep-21 11:56:59.648 [Task submitter] INFO  nextflow.Session - [3e/dd8811] Re-submitted process > saige_logistic_whole_1 (Run logistic regression on UKB_null)
+Sep-21 11:59:55.048 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Sep-21 11:59:55.059 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
+[process] saige_logistic_whole_2
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Sep-21 11:59:55.061 [main] DEBUG nextflow.Session - Session await > all process finished
+Sep-21 11:59:55.062 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-21 11:59:55.068 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+Sep-21 11:59:55.091 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=1; runningCount=-1; retriesCount=1; abortedCount=1; succeedDuration=0ms; failedDuration=45s; cachedDuration=0ms;loadCpus=-9; loadMemory=0; peakRunning=1; peakCpus=9; peakMemory=120 GB; ]
+Sep-21 11:59:55.091 [main] DEBUG nextflow.trace.TraceFileObserver - Flow completing -- flushing trace file
+Sep-21 11:59:55.094 [main] DEBUG nextflow.trace.ReportObserver - Flow completing -- rendering html report
+Sep-21 11:59:55.126 [main] DEBUG nextflow.trace.ReportObserver - Execution report summary data:
+  [{"cpuUsage":null,"process":"saige_logistic_whole_1","mem":null,"memUsage":null,"timeUsage":{"mean":0.01,"min":0.01,"q1":0.01,"q2":0.01,"q3":0.01,"max":0.01,"minLabel":"saige_logistic_whole_1 (Run logistic regression on UKB_null)","maxLabel":"saige_logistic_whole_1 (Run logistic regression on UKB_null)","q1Label":"saige_logistic_whole_1 (Run logistic regression on UKB_null)","q2Label":"saige_logistic_whole_1 (Run logistic regression on UKB_null)","q3Label":"saige_logistic_whole_1 (Run logistic regression on UKB_null)"},"vmem":null,"reads":null,"cpu":null,"time":{"mean":5000,"min":5000,"q1":5000,"q2":5000,"q3":5000,"max":5000,"minLabel":"saige_logistic_whole_1 (Run logistic regression on UKB_null)","maxLabel":"saige_logistic_whole_1 (Run logistic regression on UKB_null)","q1Label":"saige_logistic_whole_1 (Run logistic regression on UKB_null)","q2Label":"saige_logistic_whole_1 (Run logistic regression on UKB_null)","q3Label":"saige_logistic_whole_1 (Run logistic regression on UKB_null)"},"writes":null}]
+Sep-21 11:59:55.411 [SIGINT handler] INFO  nextflow.Session - Adieu

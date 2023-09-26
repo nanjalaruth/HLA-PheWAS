@@ -1,0 +1,5 @@
+2023-09-21 11:17:45	-	jolly_lichterman	-	6b31a24e82617b5ab40531fe41609907	a9e7b142-4df5-4523-adf2-03a47dbab3b1	nextflow run main.nf -resume -profile slurm,singularity -c conf/test.config
+2023-09-21 11:54:49	-	extravagant_pare	-	6b31a24e82617b5ab40531fe41609907	a9e7b142-4df5-4523-adf2-03a47dbab3b1	nextflow run main.nf -resume -profile slurm,singularity -c conf/test.config
+2023-09-21 11:55:53	-	peaceful_jennings	-	9310db648c1d036ac9144d84c4de1dac	a9e7b142-4df5-4523-adf2-03a47dbab3b1	nextflow run main.nf -resume -profile slurm,singularity -c conf/test.config
+2023-09-21 12:00:45	-	desperate_church	-	9310db648c1d036ac9144d84c4de1dac	a9e7b142-4df5-4523-adf2-03a47dbab3b1	nextflow run main.nf -resume -profile slurm,singularity -c conf/test.config
+2023-09-21 12:13:31	41m 53s	loving_kilby	OK	061a8dc1a57fd622df267549c2643098	a9e7b142-4df5-4523-adf2-03a47dbab3b1	nextflow run main.nf -resume -profile slurm,singularity -c conf/test.config

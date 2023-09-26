@@ -1,0 +1,225 @@
+[1] "[BMRC] Warning: The BMRC Rprofile has been de-activated because R is running inside a singularity container."
+R version 3.6.3 (2020-02-29)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 20.04.4 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] data.table_1.12.8   optparse_1.7.3      RhpcBLASctl_0.23-42
+[4] SAIGE_1.1.6.3      
+
+loaded via a namespace (and not attached):
+[1] compiler_3.6.3     Matrix_1.5-3       Rcpp_1.0.7         getopt_1.20.3     
+[5] grid_3.6.3         RcppParallel_5.1.7 lattice_0.20-40   
+$vcfFile
+[1] "merged_chr6_filtered_cauc_sex.vcf.gz"
+
+$vcfFileIndex
+[1] "merged_chr6_filtered_cauc_sex.vcf.gz.csi"
+
+$vcfField
+[1] "GT"
+
+$savFile
+[1] ""
+
+$savFileIndex
+[1] ""
+
+$bgenFile
+[1] ""
+
+$bgenFileIndex
+[1] ""
+
+$sampleFile
+[1] "orig_ids.txt"
+
+$bedFile
+[1] ""
+
+$bimFile
+[1] ""
+
+$famFile
+[1] ""
+
+$AlleleOrder
+[1] "alt-first"
+
+$idstoIncludeFile
+[1] ""
+
+$rangestoIncludeFile
+[1] ""
+
+$chrom
+[1] "6"
+
+$is_imputed_data
+[1] FALSE
+
+$minMAF
+[1] 0.01
+
+$minMAC
+[1] 1
+
+$minGroupMAC_in_BurdenTest
+[1] 5
+
+$minInfo
+[1] 0
+
+$maxMissing
+[1] 0.15
+
+$impute_method
+[1] "best_guess"
+
+$LOCO
+[1] FALSE
+
+$GMMATmodelFile
+[1] "UKB_asthma_saige_out.rda"
+
+$varianceRatioFile
+[1] "UKB_asthma_saige_out.varianceRatio.txt"
+
+$SAIGEOutputFile
+[1] "UKB_asthma_binary.SAIGE.vcf.genotype.txt"
+
+$markers_per_chunk
+[1] 10000
+
+$groups_per_chunk
+[1] 100
+
+$is_output_moreDetails
+[1] FALSE
+
+$is_overwrite_output
+[1] TRUE
+
+$maxMAF_in_groupTest
+[1] "0.0001,0.001,0.01"
+
+$maxMAC_in_groupTest
+[1] "0"
+
+$annotation_in_groupTest
+[1] "lof,missense;lof,missense;lof;synonymous"
+
+$groupFile
+[1] ""
+
+$sparseGRMFile
+[1] ""
+
+$sparseGRMSampleIDFile
+[1] ""
+
+$relatednessCutoff
+[1] 0
+
+$MACCutoff_to_CollapseUltraRare
+[1] 10
+
+$cateVarRatioMinMACVecExclude
+[1] "10,20.5"
+
+$cateVarRatioMaxMACVecInclude
+[1] "20.5"
+
+$weights.beta
+[1] "1,25"
+
+$r.corr
+[1] 0
+
+$markers_per_chunk_in_groupTest
+[1] 100
+
+$condition
+[1] ""
+
+$SPAcutoff
+[1] 2
+
+$dosage_zerod_cutoff
+[1] 0.2
+
+$dosage_zerod_MAC_cutoff
+[1] 10
+
+$is_single_in_groupTest
+[1] FALSE
+
+$is_no_weight_in_groupTest
+[1] FALSE
+
+$is_output_markerList_in_groupTest
+[1] FALSE
+
+$is_Firth_beta
+[1] FALSE
+
+$pCutoffforFirth
+[1] 0.01
+
+$is_fastTest
+[1] FALSE
+
+$max_MAC_for_ER
+[1] 4
+
+$subSampleFile
+[1] ""
+
+$help
+[1] FALSE
+
+[1] "opt$r.corr"
+[1] 0
+dosage_zerod_cutoff  0.2 
+Any dosages <=  0.2  for genetic variants with MAC <=  10  are set to be 0 in group tests
+single-variant association test will be performed
+[1] "Leave-one-chromosome-out is not applied"
+P-values of genetic variants with MAC <=  4  will be calculated via effecient resampling.
+[1] "LOCO = FASLE and leave-one-chromosome-out is not applied"
+variance Ratio null is  1 
+Please note the argument vcfFileIndex will not be used in future versions because the vcf index file must has the name 'vcfFile'.csi
+dosageFile type is  vcf 
+Open VCF done
+To read the field GT
+Number of meta lines in the vcf file (lines starting with ##): 6
+Number of samples in the vcf file: 409627
+Setting position of samples in VCF files....
+m_N 103282
+(2023-09-21 12:41:31) ---- Analyzing Chunk 1 :  chrom InitialChunk ---- 
+Completed 10000/10000 markers in the chunk.
+9846 markers were tested.
+write to output
+   user  system elapsed 
+542.632   2.755 546.735 
+isVcfEnd  FALSE 
+(2023-09-21 12:48:02) ---- Analyzing Chunk 2 :  chrom InitialChunk ---- 
+Reach the end of the vcf file
+9120 markers were tested.
+write to output
+   user  system elapsed 
+979.267   3.350 984.995 
+isVcfEnd  TRUE 
+[1] "Analysis done! The results have been saved to 'UKB_asthma_binary.SAIGE.vcf.genotype.txt'."
